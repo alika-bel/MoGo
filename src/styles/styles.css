@@ -18,14 +18,26 @@ body {
   line-height: 1.21;
   color: var(--text-primary-color);
 }
-
+.container {
+  max-width: 1230px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .logo {
   color: var(--accent-color);
   text-decoration: none;
   font-weight: 700;
   font-size: 30px;
 }
-
+.nav-list {
+  display: flex;
+  gap: 55px;
+}
 .nav-link {
   color: var(--accent-color);
   text-decoration: none;
@@ -35,18 +47,34 @@ body {
   text-decoration: 3px underline;
 }
 .services-head {
+  margin-top: 68px;
+  margin-bottom: 20px;
   line-height: 1.45;
   font-size: 24px;
   font-family: var(--font-accent);
   text-align: center;
 }
 .services-title {
+  margin-bottom: 109px;
   line-height: 1.23;
   text-align: center;
   font-weight: 700;
   font-size: 30px;
   font-variant: all-small-caps;
   text-decoration: var(--text-active-color) 4px underline;
+}
+.services-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+.services-item {
+  max-width: 330px;
+}
+.services-heading {
+  display: flex;
+  gap: 20px;
 }
 .services-name {
   font-weight: 400;
@@ -55,18 +83,25 @@ body {
   text-transform: uppercase;
 }
 .services-text {
+  padding-left: 58px;
   font-size: 15px;
   color: var(--text-secondary-color);
   line-height: 1.47;
   font-family: var(--font-secondary);
 }
+.team {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 .team-head {
+  margin-bottom: 17px;
   line-height: 1.45;
   font-size: 24px;
   font-family: var(--font-accent);
   text-align: center;
 }
 .team-title {
+  margin-bottom: 85px;
   line-height: 1.23;
   text-align: center;
   font-weight: 700;
@@ -75,29 +110,51 @@ body {
   text-decoration: var(--text-active-color) 4px underline;
 }
 .team-text {
+  margin-bottom: 27px;
   line-height: 1.2;
   font-size: 15px;
   text-align: center;
   color: var(--text-secondary-color);
 }
+.team-list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
 .teammate-name {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
   font-family: var(--font-secondary);
   font-variant: all-small-caps;
   font-weight: 400;
 }
 .teammate-text {
+  margin-top: 11px;
+  display: flex;
+  justify-content: center;
   font-style: italic;
   font-weight: 300;
   font-size: 15px;
   color: var(--text-secondary-color);
 }
+
 .footer {
+
   color: var(--text-secondary-color);
   border: 1px solid;
-  width: 1200px;
-  height: 1px;
+  
+}
+.footer-container {
+  max-width: 1200px;
+  max-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer-policy {
+  margin-right: 524px;
   color: var(--text-policy-color);
 }
 .policy-part {
@@ -108,6 +165,7 @@ body {
   color: #f65b5b;
 }
 .footer-input {
+  padding: 10px;
   font-style: italic;
   border: 1px solid;
   border-color: var(--text-secondary-color);
@@ -115,7 +173,9 @@ body {
 .footer-input:hover {
   background-color: #b6b6b62d;
 }
+
 .footer-button {
+  padding: 12px 38px;
   font-family: var(--font-secondary);
   background-color: var(--accent-color);
   border: none;
